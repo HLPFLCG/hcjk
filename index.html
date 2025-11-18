@@ -56,7 +56,7 @@
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen" class="loading-screen">
-        <img src="https://picsum.photos/seed/hcjk-loading/200/100" alt="HCJK Collection" class="loading-logo">
+        <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="loading-logo">
         <div class="loading-spinner"></div>
         <p class="loading-text">Loading</p>
     </div>
@@ -73,7 +73,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-brand">
-                <img src="https://picsum.photos/seed/hcjk-logo/120/40" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
+                <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
             </a>
             
             <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu">
@@ -87,13 +87,13 @@
                     <a href="index.html" class="navbar-link active">Home</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="portfolio.html" class="navbar-link">Portfolio</a>
-                </li>
-                <li class="navbar-item">
                     <a href="about.html" class="navbar-link">About</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="booking.html" class="navbar-link">Booking</a>
+                    <a href="services.html" class="navbar-link">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="portfolio.html" class="navbar-link">Portfolio</a>
                 </li>
                 <li class="navbar-item">
                     <a href="contact.html" class="navbar-link">Contact</a>
@@ -104,122 +104,70 @@
 
     <!-- Main Content -->
     <main id="main-content">
-        <!-- Hero Section with Rotating Images -->
+        <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-slider" id="hero-slider">
-                <div class="hero-slide active">
-                    <img src="https://picsum.photos/seed/hcjk-hero1/1920/1080" alt="Luxury Wedding Photography" class="hero-image">
-                    <div class="hero-content">
-                        <h1 class="hero-title">Timeless Moments</h1>
-                        <p class="hero-subtitle">Capturing life's most precious memories with artistry and elegance</p>
-                        <a href="portfolio.html" class="hero-cta">View Portfolio</a>
-                    </div>
+            <div class="hero-content">
+                <div class="hero-brand">
+                    <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="hero-logo">
                 </div>
-                <div class="hero-slide">
-                    <img src="https://picsum.photos/seed/hcjk-hero2/1920/1080" alt="Portrait Photography" class="hero-image">
-                    <div class="hero-content">
-                        <h1 class="hero-title">Natural Beauty</h1>
-                        <p class="hero-subtitle">Creating portraits that reflect your unique story and personality</p>
-                        <a href="booking.html" class="hero-cta">Book Session</a>
-                    </div>
-                </div>
-                <div class="hero-slide">
-                    <img src="https://picsum.photos/seed/hcjk-hero3/1920/1080" alt="Landscape Photography" class="hero-image">
-                    <div class="hero-content">
-                        <h1 class="hero-title">Scenic Wonders</h1>
-                        <p class="hero-subtitle">Exploring the beauty of nature through stunning landscape imagery</p>
-                        <a href="portfolio.html" class="hero-cta">View Gallery</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Hero Navigation -->
-            <div class="hero-nav">
-                <button class="hero-nav-btn prev" id="hero-prev">&#10094;</button>
-                <button class="hero-nav-btn next" id="hero-next">&#10095;</button>
-            </div>
-            <!-- Hero Indicators -->
-            <div class="hero-indicators" id="hero-indicators">
-                <button class="indicator active" data-slide="0"></button>
-                <button class="indicator" data-slide="1"></button>
-                <button class="indicator" data-slide="2"></button>
-            </div>
-        </section>
-
-        <!-- About Preview -->
-        <section class="section about-preview">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="https://picsum.photos/seed/hcjk-about/600/400" alt="About HCJK Collection" class="about-image">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="section-title">HCJK Collection</h2>
-                        <p class="section-subtitle">Professional Photography Services</p>
-                        <p>We specialize in creating stunning visual narratives that capture the essence of your most important moments. From intimate portraits to grand celebrations, our artistic vision transforms ordinary moments into extraordinary memories.</p>
-                        <a href="about.html" class="btn btn-primary">Learn More</a>
-                    </div>
+                <h1 class="hero-title">HCJK Collection</h1>
+                <p class="hero-subtitle">Photography</p>
+                <p class="hero-description">Capturing life's most precious moments with artistry, passion, and authenticity.</p>
+                <p class="hero-tagline">Every image tells a story, every moment becomes art.</p>
+                <div class="hero-cta">
+                    <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                    <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
                 </div>
             </div>
         </section>
 
-        <!-- Services Preview -->
-        <section class="section services-preview">
-            <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Professional photography for every occasion</p>
-                
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="service-card">
-                            <img src="https://picsum.photos/seed/hcjk-wedding/400/300" alt="Wedding Photography" class="service-image">
-                            <h3>Wedding Photography</h3>
-                            <p>Capturing the magic of your special day with artistic elegance and attention to detail.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service-card">
-                            <img src="https://picsum.photos/seed/hcjk-portrait/400/300" alt="Portrait Photography" class="service-image">
-                            <h3>Portrait Photography</h3>
-                            <p>Creating timeless portraits that reflect your unique personality and style.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service-card">
-                            <img src="https://picsum.photos/seed/hcjk-landscape/400/300" alt="Landscape Photography" class="service-image">
-                            <h3>Landscape Photography</h3>
-                            <p>Exploring the beauty of nature through stunning landscape imagery.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Preview -->
-        <section class="section portfolio-preview">
+        <!-- Featured Work Section -->
+        <section class="section featured-work">
             <div class="container">
                 <h2 class="section-title">Featured Work</h2>
-                <p class="section-subtitle">A glimpse into our photography portfolio</p>
+                <p class="section-subtitle">A curated selection showcasing diverse styles and subjects</p>
                 
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <img src="https://picsum.photos/seed/hcjk-wedding1/400/300" alt="Portfolio Image 1" class="portfolio-image">
-                        <div class="portfolio-overlay">
-                            <h3>Wedding Elegance</h3>
-                            <p>Capturing timeless moments</p>
+                <div class="featured-grid">
+                    <div class="featured-item">
+                        <img src="https://hcjk.org/images/portfolio/portfolio-1.webp" alt="Wedding Moment" class="featured-image">
+                        <div class="featured-overlay">
+                            <h3>Wedding Moment</h3>
+                            <span class="featured-category">Wedding</span>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <img src="https://picsum.photos/seed/hcjk-portrait1/400/300" alt="Portfolio Image 2" class="portfolio-image">
-                        <div class="portfolio-overlay">
+                    <div class="featured-item">
+                        <img src="https://hcjk.org/images/portfolio/portfolio-2.webp" alt="Portrait Session" class="featured-image">
+                        <div class="featured-overlay">
+                            <h3>Portrait Session</h3>
+                            <span class="featured-category">Portrait</span>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://hcjk.org/images/portfolio/portfolio-3.webp" alt="Natural Beauty" class="featured-image">
+                        <div class="featured-overlay">
                             <h3>Natural Beauty</h3>
-                            <p>Portrait photography</p>
+                            <span class="featured-category">Landscape</span>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <img src="https://picsum.photos/seed/hcjk-landscape1/400/300" alt="Portfolio Image 3" class="portfolio-image">
-                        <div class="portfolio-overlay">
-                            <h3>Scenic Landscapes</h3>
-                            <p>Nature's beauty captured</p>
+                    <div class="featured-item">
+                        <img src="https://hcjk.org/images/portfolio/portfolio-4.webp" alt="Special Day" class="featured-image">
+                        <div class="featured-overlay">
+                            <h3>Special Day</h3>
+                            <span class="featured-category">Wedding</span>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://hcjk.org/images/portfolio/portfolio-5.webp" alt="Artistic Shot" class="featured-image">
+                        <div class="featured-overlay">
+                            <h3>Artistic Shot</h3>
+                            <span class="featured-category">Portrait</span>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://hcjk.org/images/portfolio/portfolio-6.webp" alt="Scenic View" class="featured-image">
+                        <div class="featured-overlay">
+                            <h3>Scenic View</h3>
+                            <span class="featured-category">Landscape</span>
                         </div>
                     </div>
                 </div>
@@ -230,13 +178,87 @@
             </div>
         </section>
 
-        <!-- Contact CTA -->
-        <section class="section contact-cta">
+        <!-- About Section -->
+        <section class="section about-section">
             <div class="container">
-                <div class="cta-content">
-                    <h2 class="section-title">Let's Create Something Beautiful</h2>
-                    <p class="section-subtitle">Contact us today to discuss your photography needs</p>
-                    <a href="contact.html" class="btn btn-primary btn-large">Get in Touch</a>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://hcjk.org/emma-child1.webp" alt="Heather - HCJK Collection Photographer" class="about-photo">
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">Hi, I'm Heather</h2>
+                        <p class="about-intro">I am a photographic artist who contributes to the visual world with a unique perspective. I have the ability to blend aesthetics with emotional depth in every frame I capture, transforming memories into timeless artistic pieces.</p>
+                        <p>HCJK Photography captures life's most precious moments with artistry, passion, and authenticity. I specialize in creating timeless imagery that tells your unique story through professional wedding photography, portrait sessions, and fine art photography.</p>
+                        <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section">
+            <div class="container">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">Professional photography tailored to your story</p>
+                
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-image">
+                            <img src="https://hcjk.org/images/portfolio/portfolio-10.webp" alt="Wedding Photography" class="service-photo">
+                            <div class="service-number">01</div>
+                        </div>
+                        <div class="service-content">
+                            <p class="service-label">Your special day, captured forever</p>
+                            <h3>Wedding Photography</h3>
+                            <p>Capturing the magic of your special day with elegance and artistry.</p>
+                            <a href="services.html" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-image">
+                            <img src="https://hcjk.org/images/portfolio/portfolio-20.webp" alt="Portrait Photography" class="service-photo">
+                            <div class="service-number">02</div>
+                        </div>
+                        <div class="service-content">
+                            <p class="service-label">Timeless images of you</p>
+                            <h3>Portrait Photography</h3>
+                            <p>Professional portraits that capture your unique personality.</p>
+                            <a href="services.html" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-image">
+                            <img src="https://hcjk.org/images/portfolio/portfolio-30.webp" alt="Landscape & Nature" class="service-photo">
+                            <div class="service-number">03</div>
+                        </div>
+                        <div class="service-content">
+                            <p class="service-label">The beauty of our world</p>
+                            <h3>Landscape & Nature</h3>
+                            <p>Breathtaking scenes perfect for art collectors.</p>
+                            <a href="services.html" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="services.html" class="btn btn-primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Section -->
+        <section class="section instagram-section">
+            <div class="container">
+                <h2 class="section-title">Follow on Instagram</h2>
+                <p class="section-subtitle">Daily inspiration, behind-the-scenes moments, and the latest work</p>
+                
+                <div class="instagram-content">
+                    <a href="https://www.instagram.com/hcjk_collection" target="_blank" rel="noopener" class="instagram-handle">
+                        <span class="instagram-symbol">@</span>hcjk_collection
+                    </a>
+                    <a href="https://www.instagram.com/hcjk_collection" target="_blank" rel="noopener" class="btn btn-primary">Follow for More</a>
                 </div>
             </div>
         </section>
@@ -245,83 +267,56 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-brand">
-                        <img src="https://picsum.photos/seed/hcjk-logo/120/40" alt="HCJK Collection" width="120" height="40">
-                        <p>Professional photography services capturing life's most precious moments.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" class="footer-logo">
+                    <h3>HCJK Collection</h3>
+                </div>
+                
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="services.html">Wedding Photography</a></li>
+                            <li><a href="services.html">Portrait Photography</a></li>
+                            <li><a href="services.html">Landscape Photography</a></li>
+                            <li><a href="services.html">Cityscape Photography</a></li>
+                            <li><a href="services.html">Macro Photography</a></li>
+                            <li><a href="services.html">Custom Projects</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="booking.html">Booking</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">Facebook</a>
-                        <a href="#" aria-label="Instagram">Instagram</a>
-                        <a href="#" aria-label="Twitter">Twitter</a>
+                    
+                    <div class="footer-section">
+                        <h4>Navigate</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul class="footer-contact">
+                            <li><a href="mailto:contact@hcjk.org" class="email-link">contact@hcjk.org</a></li>
+                            <li><a href="tel:+16163133484" class="phone-link">+1 (616) 313-3484</a></li>
+                            <li><a href="https://www.instagram.com/hcjk_collection" target="_blank" rel="noopener" class="social-link">@hcjk_collection</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 HCJK Collection. All rights reserved.</p>
-                <ul class="footer-legal">
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
-                </ul>
+                <p>&copy; 2025 HCJK Collection. All rights reserved. | Designed with ❤️ by HLPFL</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="scripts.js"></script>
-    <script>
-        // Hero Slider functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const slides = document.querySelectorAll('.hero-slide');
-            const indicators = document.querySelectorAll('.indicator');
-            const prevBtn = document.getElementById('hero-prev');
-            const nextBtn = document.getElementById('hero-next');
-            let currentSlide = 0;
-            
-            function showSlide(index) {
-                slides.forEach(slide => slide.classList.remove('active'));
-                indicators.forEach(indicator => indicator.classList.remove('active'));
-                
-                slides[index].classList.add('active');
-                indicators[index].classList.add('active');
-                currentSlide = index;
-            }
-            
-            function nextSlide() {
-                const nextIndex = (currentSlide + 1) % slides.length;
-                showSlide(nextIndex);
-            }
-            
-            function prevSlide() {
-                const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
-                showSlide(prevIndex);
-            }
-            
-            // Auto-play slider
-            setInterval(nextSlide, 5000);
-            
-            // Navigation controls
-            nextBtn.addEventListener('click', nextSlide);
-            prevBtn.addEventListener('click', prevSlide);
-            
-            // Indicator controls
-            indicators.forEach((indicator, index) => {
-                indicator.addEventListener('click', () => showSlide(index));
-            });
-        });
-    </script>
 </body>
 </html>
