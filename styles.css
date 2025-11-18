@@ -5780,3 +5780,797 @@ body.loading {
         padding: 4rem 0;
     }
 }
+
+/* Enhanced Instagram Section Styles */
+.instagram-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(225, 48, 108, 0.03) 0%, 
+        rgba(253, 29, 29, 0.03) 25%, 
+        rgba(252, 176, 69, 0.03) 50%, 
+        rgba(131, 58, 180, 0.03) 75%, 
+        rgba(253, 29, 29, 0.03) 100%);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.instagram-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 1;
+}
+
+.instagram-content {
+    position: relative;
+    z-index: 1;
+}
+
+.instagram-embed-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-media {
+    max-width: 100% !important;
+    min-width: 300px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.instagram-media:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3) !important;
+}
+
+.instagram-links {
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.instagram-handle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease !important;
+}
+
+.instagram-handle:hover {
+    transform: scale(1.05) !important;
+    text-decoration: underline !important;
+}
+
+.instagram-symbol {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800 !important;
+}
+
+/* Responsive Instagram Section */
+@media (max-width: 768px) {
+    .instagram-embed-container {
+        margin: 1.5rem 0;
+    }
+    
+    .instagram-media {
+        min-width: 260px !important;
+        margin: 0 auto;
+    }
+    
+    .instagram-links {
+        gap: 1.5rem;
+    }
+    
+    .instagram-handle {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-media {
+        min-width: 240px !important;
+    }
+    
+    .instagram-section {
+        padding: 4rem 0;
+    }
+    
+    .instagram-handle {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* ===================================
+   INSTAGRAM CAROUSEL STYLES
+   =================================== */
+
+.instagram-carousel {
+    margin: 2rem 0;
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 1rem;
+}
+
+.carousel-slide {
+    flex: 0 0 calc(33.333% - 0.667rem);
+    min-width: 0;
+}
+
+.instagram-post {
+    position: relative;
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-post:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instagram-post:hover img {
+    transform: scale(1.1);
+}
+
+.instagram-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.1) 0%, 
+        rgba(0, 0, 0, 0.3) 50%, 
+        rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.instagram-post:hover .instagram-overlay {
+    opacity: 1;
+}
+
+.instagram-icon {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.instagram-stats {
+    display: flex;
+    gap: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.instagram-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    color: var(--black-rich);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-prev {
+    left: 1rem;
+}
+
+.carousel-next {
+    right: 1rem;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex: 0 0 100%;
+    }
+    
+    .carousel-track {
+        gap: 0;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-prev {
+        left: 0.5rem;
+    }
+    
+    .carousel-next {
+        right: 0.5rem;
+    }
+    
+    .instagram-stats {
+        font-size: 0.8rem;
+        gap: 0.5rem;
+    }
+    
+    .instagram-stats span {
+        padding: 0.2rem 0.4rem;
+    }
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .carousel-slide {
+        flex: 0 0 calc(50% - 0.5rem);
+    }
+    
+    .carousel-track {
+        gap: 1rem;
+    }
+}
+
+/* Auto-scroll animation */
+@keyframes autoScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% / 6 * 3));
+    }
+}
+
+.carousel-track.auto-scroll {
+    animation: autoScroll 15s linear infinite;
+}
+
+.carousel-container:hover .carousel-track.auto-scroll {
+    animation-play-state: paused;
+}
+
+/* Loading skeleton */
+.carousel-slide.skeleton {
+    background: linear-gradient(90deg, 
+        rgba(255, 255, 255, 0.1) 0%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        rgba(255, 255, 255, 0.1) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Focus styles for accessibility */
+.carousel-prev:focus,
+.carousel-next:focus {
+    outline: 3px solid var(--merlot-classic);
+    outline-offset: 2px;
+}
+
+.instagram-post:focus {
+    outline: 3px solid var(--merlot-classic);
+    outline-offset: 2px;
+}
+
+.dot:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* ===================================
+   HERO GALLERY STYLES
+   =================================== */
+
+.hero-gallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: scale(1.05);
+}
+
+.hero-slide.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+    z-index: 3;
+}
+
+/* Hero Navigation Buttons */
+.hero-prev,
+.hero-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    color: white;
+    opacity: 0;
+}
+
+.hero:hover .hero-prev,
+.hero:hover .hero-next {
+    opacity: 1;
+}
+
+.hero-prev {
+    left: 2rem;
+}
+
+.hero-next {
+    right: 2rem;
+}
+
+.hero-prev:hover,
+.hero-next:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Dots */
+.hero-dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.75rem;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero:hover .hero-dots {
+    opacity: 1;
+}
+
+.hero-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero-dot:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.2);
+}
+
+.hero-dot.active {
+    background: white;
+    width: 30px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+/* Ensure hero content stays above gallery */
+.hero-content {
+    position: relative;
+    z-index: 5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-prev,
+    .hero-next {
+        width: 40px;
+        height: 40px;
+        opacity: 0.7;
+    }
+    
+    .hero-prev {
+        left: 1rem;
+    }
+    
+    .hero-next {
+        right: 1rem;
+    }
+    
+    .hero-dots {
+        bottom: 1rem;
+        gap: 0.5rem;
+    }
+    
+    .hero-dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .hero-dot.active {
+        width: 24px;
+    }
+}
+
+/* Loading Animation */
+.hero-slide.loading {
+    background: linear-gradient(90deg, 
+        rgba(0, 0, 0, 0.1) 0%, 
+        rgba(0, 0, 0, 0.2) 50%, 
+        rgba(0, 0, 0, 0.1) 100%);
+    background-size: 200% 100%;
+    animation: heroShimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes heroShimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Smooth fade transitions */
+.hero-slide.fade-in {
+    animation: heroFadeIn 1s ease-in-out forwards;
+}
+
+.hero-slide.fade-out {
+    animation: heroFadeOut 1s ease-in-out forwards;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes heroFadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
+/* Focus styles for accessibility */
+.hero-prev:focus,
+.hero-next:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 2px;
+    opacity: 1;
+}
+
+.hero-dot:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .hero-prev,
+    .hero-next,
+    .hero-dots {
+        opacity: 1;
+    }
+}
+
+/* Hero Content Centering */
+.hero-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+}
+
+.hero-brand {
+    margin-bottom: 1rem !important;
+}
+
+.hero-title {
+    margin-bottom: 0.5rem !important;
+}
+
+.hero-subtitle {
+    margin-bottom: 1rem !important;
+}
+
+.hero-description {
+    margin-bottom: 0.5rem !important;
+    max-width: 600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.hero-tagline {
+    margin-bottom: 2rem !important;
+    max-width: 500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.hero-cta {
+    display: flex !important;
+    gap: 1rem !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+}
+
+
+/* Smaller Hero Section for Other Pages */
+.hero.hero-small {
+    height: 60vh !important;
+    min-height: 400px !important;
+}
+
+.hero.hero-small .hero-content {
+    padding: 2rem !important;
+}
+
+.hero.hero-small .hero-logo {
+    width: 80px !important;
+    height: auto !important;
+}
+
+.hero.hero-small .hero-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.hero.hero-small .hero-subtitle {
+    font-size: 1.2rem !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* Compact and Organized Footer */
+.footer {
+    padding: 3rem 0 1.5rem !important;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+}
+
+.footer-content {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr 1fr !important;
+    gap: 2rem !important;
+    margin-bottom: 2rem !important;
+    align-items: start !important;
+}
+
+.footer-brand {
+    text-align: center !important;
+}
+
+.footer-logo {
+    width: 120px !important;
+    height: auto !important;
+    margin-bottom: 1rem !important;
+}
+
+.footer-brand h3 {
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    margin: 0 !important;
+    font-weight: 600 !important;
+}
+
+.footer-sections {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 2rem !important;
+}
+
+.footer-section h4 {
+    color: #fff !important;
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+.footer-links, .footer-contact {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.footer-links li, .footer-contact li {
+    margin-bottom: 0.5rem !important;
+}
+
+.footer-links a, .footer-contact a {
+    color: #b8b8b8 !important;
+    text-decoration: none !important;
+    font-size: 0.9rem !important;
+    transition: color 0.3s ease !important;
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+    color: #fff !important;
+}
+
+.footer-bottom {
+    text-align: center !important;
+    padding-top: 1.5rem !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer-bottom p {
+    color: #888 !important;
+    font-size: 0.85rem !important;
+    margin: 0 !important;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        text-align: center !important;
+    }
+    
+    .footer-sections {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        text-align: center !important;
+    }
+    
+    .footer {
+        padding: 2rem 0 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        width: 100px !important;
+    }
+}
+
