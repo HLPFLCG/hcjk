@@ -36,11 +36,11 @@
     <meta property="twitter:image" content="https://www.hcjk.org/assets/images/twitter-image.jpg">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon-48x48.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.png">
     <link rel="manifest" href="site.webmanifest">
     
     <!-- Styles -->
@@ -104,19 +104,48 @@
 
     <!-- Main Content -->
     <main id="main-content">
-        <!-- Contact Header -->
-        <section class="contact-hero">
-            <div class="contact-hero-image">
-                <img src="https://hcjk.org/clay-roof-house-panoramic.webp" alt="Get in Touch" class="hero-bg">
-            </div>
-            <div class="contact-hero-content">
-                <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="contact-logo">
-                <h1 class="contact-title">Get in Touch</h1>
-                <p class="contact-subtitle">Let's create something beautiful together</p>
-            </div>
-        </section>
-
-        <!-- Contact Information -->
+           <!-- Hero Section -->
+           <section class="hero hero-small">
+               <!-- Hero Background Gallery -->
+               <div class="hero-gallery">
+                   <div class="hero-slide active">
+                       <img src="assets/images/hero-clay-roof-house-panoramic.webp" alt="Clay roof house" loading="eager">
+                       <div class="hero-overlay"></div>
+                   </div>
+                   <div class="hero-slide">
+                       <img src="assets/images/hero-mercado-oferta.webp" alt="Market scene" loading="lazy">
+                       <div class="hero-overlay"></div>
+                   </div>
+                   <div class="hero-slide">
+                       <img src="assets/images/hero-flags.webp" alt="Colorful flags" loading="lazy">
+                       <div class="hero-overlay"></div>
+                   </div>
+               </div>
+               
+               <!-- Hero Navigation -->
+               <button class="hero-prev" aria-label="Previous slide">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                       <path d="M15 18l-6-6 6-6"/>
+                   </svg>
+               </button>
+               <button class="hero-next" aria-label="Next slide">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                       <path d="M9 18l6-6-6-6"/>
+                   </svg>
+               </button>
+               
+               <!-- Hero Dots -->
+               <div class="hero-dots"></div>
+               
+               <!-- Hero Content -->
+               <div class="hero-content">
+                   <div class="hero-brand">
+                       <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="hero-logo">
+                   </div>
+                   <h1 class="hero-title">Get in Touch</h1>
+                   <p class="hero-subtitle">Let's create something beautiful together</p>
+               </div>
+           </section>
         <section class="section contact-info-section">
             <div class="container">
                 <div class="contact-info-grid">
