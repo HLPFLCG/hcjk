@@ -1,0 +1,2 @@
+Instagram embed integration completed
+Deployment triggered: 2025-11-18 03:55:31 UTC
