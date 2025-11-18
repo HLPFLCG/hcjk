@@ -56,7 +56,7 @@
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen" class="loading-screen">
-        <img src="assets/images/hcjkstackednewsvg.svg" alt="HCJK Collection" class="loading-logo">
+        <img src="https://picsum.photos/seed/hcjk-loading/200/100" alt="HCJK Collection" class="loading-logo">
         <div class="loading-spinner"></div>
         <p class="loading-text">Loading</p>
     </div>
@@ -73,7 +73,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-brand">
-                <img src="assets/images/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
+                <img src="https://picsum.photos/seed/hcjk-logo/120/40" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
             </a>
             
             <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu">
@@ -104,16 +104,49 @@
 
     <!-- Main Content -->
     <main id="main-content">
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
-                <h1 class="page-title">Portfolio</h1>
-                <p class="page-subtitle">A collection of our finest photography work</p>
+        <!-- Hero Section with Rotating Images -->
+        <section class="hero">
+            <div class="hero-slider" id="hero-slider">
+                <div class="hero-slide active">
+                    <img src="https://picsum.photos/seed/hcjk-portfolio-hero1/1920/1080" alt="Wedding Photography Portfolio" class="hero-image">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Our Portfolio</h1>
+                        <p class="hero-subtitle">A collection of our finest photography work</p>
+                        <a href="#gallery" class="hero-cta">View Gallery</a>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="https://picsum.photos/seed/hcjk-portfolio-hero2/1920/1080" alt="Portrait Photography Gallery" class="hero-image">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Timeless Portraits</h1>
+                        <p class="hero-subtitle">Capturing personality and emotion in every frame</p>
+                        <a href="#gallery" class="hero-cta">Explore Portraits</a>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="https://picsum.photos/seed/hcjk-portfolio-hero3/1920/1080" alt="Landscape Photography Collection" class="hero-image">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Natural Beauty</h1>
+                        <p class="hero-subtitle">Exploring the world through stunning landscape photography</p>
+                        <a href="#gallery" class="hero-cta">See Landscapes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Navigation -->
+            <div class="hero-nav">
+                <button class="hero-nav-btn prev" id="hero-prev">&#10094;</button>
+                <button class="hero-nav-btn next" id="hero-next">&#10095;</button>
+            </div>
+            <!-- Hero Indicators -->
+            <div class="hero-indicators" id="hero-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
             </div>
         </section>
 
         <!-- Portfolio Gallery -->
-        <section class="section portfolio-gallery">
+        <section id="gallery" class="section portfolio-gallery">
             <div class="container">
                 <!-- Filter Tabs -->
                 <div class="portfolio-filters">
@@ -127,45 +160,87 @@
                 <!-- Gallery Grid -->
                 <div class="portfolio-grid">
                     <div class="portfolio-item" data-category="wedding">
-                        <img src="assets/images/portfolio-1.webp" alt="Wedding Photography" class="portfolio-image">
+                        <img src="https://picsum.photos/seed/hcjk-wedding1/400/300" alt="Wedding Photography" class="portfolio-image">
                         <div class="portfolio-overlay">
                             <h3>Wedding Elegance</h3>
                             <p>Capturing timeless moments</p>
                         </div>
                     </div>
                     <div class="portfolio-item" data-category="portrait">
-                        <img src="assets/images/portfolio-2.webp" alt="Portrait Photography" class="portfolio-image">
+                        <img src="https://picsum.photos/seed/hcjk-portrait1/400/300" alt="Portrait Photography" class="portfolio-image">
                         <div class="portfolio-overlay">
                             <h3>Natural Beauty</h3>
                             <p>Portrait photography</p>
                         </div>
                     </div>
                     <div class="portfolio-item" data-category="landscape">
-                        <img src="assets/images/portfolio-3.webp" alt="Landscape Photography" class="portfolio-image">
+                        <img src="https://picsum.photos/seed/hcjk-landscape1/400/300" alt="Landscape Photography" class="portfolio-image">
                         <div class="portfolio-overlay">
                             <h3>Scenic Landscapes</h3>
                             <p>Nature's beauty captured</p>
                         </div>
                     </div>
                     <div class="portfolio-item" data-category="wedding">
-                        <img src="assets/images/portfolio-4.webp" alt="Wedding Photography" class="portfolio-image">
+                        <img src="https://picsum.photos/seed/hcjk-wedding2/400/300" alt="Wedding Photography" class="portfolio-image">
                         <div class="portfolio-overlay">
                             <h3>Romantic Moments</h3>
                             <p>Wedding celebrations</p>
                         </div>
                     </div>
                     <div class="portfolio-item" data-category="portrait">
-                        <img src="assets/images/portfolio-5.webp" alt="Portrait Photography" class="portfolio-image">
+                        <img src="https://picsum.photos/seed/hcjk-portrait2/400/300" alt="Portrait Photography" class="portfolio-image">
                         <div class="portfolio-overlay">
                             <h3>Personal Stories</h3>
                             <p>Individual portraits</p>
                         </div>
                     </div>
                     <div class="portfolio-item" data-category="travel">
-                        <img src="assets/images/portfolio-6.webp" alt="Travel Photography" class="portfolio-image">
+                        <img src="https://picsum.photos/seed/hcjk-travel1/400/300" alt="Travel Photography" class="portfolio-image">
                         <div class="portfolio-overlay">
                             <h3>Travel Adventures</h3>
                             <p>Exploring the world</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="wedding">
+                        <img src="https://picsum.photos/seed/hcjk-wedding3/400/300" alt="Wedding Photography" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Celebration of Love</h3>
+                            <p>Wedding ceremonies</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="portrait">
+                        <img src="https://picsum.photos/seed/hcjk-portrait3/400/300" alt="Portrait Photography" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Family Moments</h3>
+                            <p>Family portraits</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="landscape">
+                        <img src="https://picsum.photos/seed/hcjk-landscape2/400/300" alt="Landscape Photography" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Mountain Vistas</h3>
+                            <p>Mountain landscapes</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="travel">
+                        <img src="https://picsum.photos/seed/hcjk-travel2/400/300" alt="Travel Photography" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Cultural Experiences</h3>
+                            <p>Travel photography</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="portrait">
+                        <img src="https://picsum.photos/seed/hcjk-portrait4/400/300" alt="Portrait Photography" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Artistic Expressions</h3>
+                            <p>Creative portraits</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="landscape">
+                        <img src="https://picsum.photos/seed/hcjk-landscape3/400/300" alt="Landscape Photography" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Coastal Beauty</h3>
+                            <p>Ocean landscapes</p>
                         </div>
                     </div>
                 </div>
@@ -190,7 +265,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-brand">
-                        <img src="assets/images/hcjkstackednewsvg.svg" alt="HCJK Collection" width="120" height="40">
+                        <img src="https://picsum.photos/seed/hcjk-logo/120/40" alt="HCJK Collection" width="120" height="40">
                         <p>Professional photography services capturing life's most precious moments.</p>
                     </div>
                 </div>
@@ -224,5 +299,70 @@
 
     <!-- Scripts -->
     <script src="scripts.js"></script>
+    <script>
+        // Hero Slider functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.getElementById('hero-prev');
+            const nextBtn = document.getElementById('hero-next');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentSlide = index;
+            }
+            
+            function nextSlide() {
+                const nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            }
+            
+            function prevSlide() {
+                const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prevIndex);
+            }
+            
+            // Auto-play slider
+            setInterval(nextSlide, 5000);
+            
+            // Navigation controls
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            // Indicator controls
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => showSlide(index));
+            });
+            
+            // Portfolio Filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Filter items
+                    portfolioItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
