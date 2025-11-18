@@ -106,8 +106,10 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-background" id="heroBackground"></div>
-               <div class="hero-content">
+            <div class="hero-content">
+                <div class="hero-brand">
+                    <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="hero-logo">
+                </div>
                 <h1 class="hero-title">HCJK Collection</h1>
                 <p class="hero-subtitle">Photography</p>
                 <p class="hero-description">Capturing life's most precious moments with artistry, passion, and authenticity.</p>
@@ -117,9 +119,6 @@
                     <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
                 </div>
             </div>
-               <div class="image-info" id="imageInfo">
-                   <span id="imageDate">Loading...</span>
-               </div>
         </section>
 
         <!-- Featured Work Section -->
@@ -177,9 +176,6 @@
                     <a href="portfolio.html" class="btn btn-primary">View Full Portfolio</a>
                 </div>
             </div>
-               <div class="image-info" id="imageInfo">
-                   <span id="imageDate">Loading...</span>
-               </div>
         </section>
 
         <!-- About Section -->
@@ -197,9 +193,6 @@
                     </div>
                 </div>
             </div>
-               <div class="image-info" id="imageInfo">
-                   <span id="imageDate">Loading...</span>
-               </div>
         </section>
 
         <!-- Services Section -->
@@ -253,9 +246,6 @@
                     <a href="services.html" class="btn btn-primary">View All Services</a>
                 </div>
             </div>
-               <div class="image-info" id="imageInfo">
-                   <span id="imageDate">Loading...</span>
-               </div>
         </section>
 
         <!-- Instagram Section -->
@@ -265,15 +255,59 @@
                 <p class="section-subtitle">Daily inspiration, behind-the-scenes moments, and the latest work</p>
                 
                 <div class="instagram-content">
-                    <a href="https://www.instagram.com/hcjk_collection" target="_blank" rel="noopener" class="instagram-handle">
-                        <span class="instagram-symbol">@</span>hcjk_collection
-                    </a>
-                    <a href="https://www.instagram.com/hcjk_collection" target="_blank" rel="noopener" class="btn btn-primary">Follow for More</a>
+                    <!-- Instagram Embed -->
+                    <div class="instagram-embed-container">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/hcjk_collection/" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;">
+                                <a href="https://www.instagram.com/hcjk_collection/" target="_blank" rel="noopener" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                        <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.414,30.41 552.332,32.492 552.332,34.947 C552.332,37.402 554.414,39.484 556.869,39.484 C559.325,39.484 561.406,37.402 561.406,34.947 C561.406,32.492 559.325,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.343,55.887 530.343,50 C530.343,44.114 535.114,39.343 541,39.343 C546.887,39.343 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.9 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.9 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80 541,80 C549.148,80 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></svg>
+                                    </div>
+                                    <div style="padding-top: 8px;">
+                                        <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                                            <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                                            <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                                            <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 224px;"></div>
+                                    </div>
+                                </a>
+                                <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/hcjk_collection/" target="_blank" rel="noopener" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;">View this post on Instagram</a></p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    
+                    <!-- Fallback Links -->
+                    <div class="instagram-links">
+                        <a href="https://www.instagram.com/hcjk_collection" target="_blank" rel="noopener" class="instagram-handle">
+                            <span class="instagram-symbol">@</span>hcjk_collection
+                        </a>
+                        <a href="https://www.instagram.com/hcjk_collection" target="_blank" rel="noopener" class="btn btn-primary">Follow for More</a>
+                    </div>
                 </div>
             </div>
-               <div class="image-info" id="imageInfo">
-                   <span id="imageDate">Loading...</span>
-               </div>
         </section>
     </main>
 
@@ -329,304 +363,10 @@
         </div>
     </footer>
 
-    <script>
-        // HCJK Collection Daily Hero Images
-        class HCJKDailyHeroImages {
-            constructor() {
-                // All HCJK Collection photos from the repository
-                this.images = [
-                    'assets/images/40.webp',
-                    'assets/images/alcove.webp',
-                    'assets/images/animal?.webp',
-                    'assets/images/animal?2.webp',
-                    'assets/images/avaluos.webp',
-                    'assets/images/back-of-boat.webp',
-                    'assets/images/beach-greenery.webp',
-                    'assets/images/big-mountain.webp',
-                    'assets/images/big-rock-1.webp',
-                    'assets/images/big-rock-boat-2-i-think.webp',
-                    'assets/images/big-rock-full.webp',
-                    'assets/images/big-rock-left.webp',
-                    'assets/images/big-rock-ocean-boat.webp',
-                    'assets/images/big-rock-ocean3.webp',
-                    'assets/images/bigrock1.webp',
-                    'assets/images/boat.webp',
-                    'assets/images/boat-closeup.webp',
-                    'assets/images/bridge-tree.webp',
-                    'assets/images/brother1.webp',
-                    'assets/images/brother10.webp',
-                    'assets/images/brother11.webp',
-                    'assets/images/brother12bw.webp',
-                    'assets/images/brother15.webp',
-                    'assets/images/brother16.webp',
-                    'assets/images/brother17.webp',
-                    'assets/images/brother18.webp',
-                    'assets/images/brother19.webp',
-                    'assets/images/brother20.webp',
-                    'assets/images/brother21bw.webp',
-                    'assets/images/brother22.webp',
-                    'assets/images/brother23.webp',
-                    'assets/images/brother24.webp',
-                    'assets/images/brother25.webp',
-                    'assets/images/brother26.webp',
-                    'assets/images/brother27.webp',
-                    'assets/images/brother28.webp',
-                    'assets/images/brother29.webp',
-                    'assets/images/brother30.webp',
-                    'assets/images/brother31.webp',
-                    'assets/images/brother32.webp',
-                    'assets/images/brother33.webp',
-                    'assets/images/brother34.webp',
-                    'assets/images/brother35.webp',
-                    'assets/images/brother36.webp',
-                    'assets/images/brother37.webp',
-                    'assets/images/brother38.webp',
-                    'assets/images/brother39.webp',
-                    'assets/images/brother40.webp',
-                    'assets/images/brother41.webp',
-                    'assets/images/brother42.webp',
-                    'assets/images/brother43bw.webp',
-                    'assets/images/brother44.webp',
-                    'assets/images/brother45.webp',
-                    'assets/images/brother46.webp',
-                    'assets/images/brother47.webp',
-                    'assets/images/brother48.webp',
-                    'assets/images/brother49.webp',
-                    'assets/images/brother50.webp',
-                    'assets/images/brother51.webp',
-                    'assets/images/brother52.webp',
-                    'assets/images/brother53.webp',
-                    'assets/images/brother54.webp',
-                    'assets/images/brother55.webp',
-                    'assets/images/brother56.webp',
-                    'assets/images/brother57.webp',
-                    'assets/images/brother58.webp',
-                    'assets/images/brother59.webp',
-                    'assets/images/brother6.webp',
-                    'assets/images/brother60.webp',
-                    'assets/images/brother61-diploma.webp',
-                    'assets/images/brother7.webp',
-                    'assets/images/brother8.webp',
-                    'assets/images/brother9.webp',
-                    'assets/images/cat.webp',
-                    'assets/images/cat2.webp',
-                    'assets/images/church.webp',
-                    'assets/images/clay-roof-house-panoramic.webp',
-                    'assets/images/coastal1.webp',
-                    'assets/images/costa-rica-bungalow.webp',
-                    'assets/images/cow.webp',
-                    'assets/images/dog-bw.webp',
-                    'assets/images/emma-child1.webp',
-                    'assets/images/emma-child10.webp',
-                    'assets/images/emma-child11.webp',
-                    'assets/images/emma-child12.webp',
-                    'assets/images/emma-child2.webp',
-                    'assets/images/emma-child3.webp',
-                    'assets/images/emma-child4.webp',
-                    'assets/images/emma-child5.webp',
-                    'assets/images/emma-child6.webp',
-                    'assets/images/emma-child7.webp',
-                    'assets/images/emma-child8.webp',
-                    'assets/images/emma-child9.webp',
-                    'assets/images/fall-leaves.webp',
-                    'assets/images/flags.webp',
-                    'assets/images/flower-close-up-2.webp',
-                    'assets/images/flower-close-up-3.webp',
-                    'assets/images/flower-close-up-4.webp',
-                    'assets/images/flower-close-up.webp',
-                    'assets/images/flower-closeup-bw.webp',
-                    'assets/images/friend-lake.webp',
-                    'assets/images/full-fock-and-boat.webp',
-                    'assets/images/full-full-big-big-rock.webp',
-                    'assets/images/green-plant-closeup.webp',
-                    'assets/images/hispanic-street-market-with-flags.webp',
-                    'assets/images/holding-hand.webp',
-                    'assets/images/idek-what-this-is.webp',
-                    'assets/images/jungle1.webp',
-                    'assets/images/jungle2.webp',
-                    'assets/images/junior-reis-xMDo8y776uE-unsplash.jpg',
-                    'assets/images/leaf-closeup-or-its-a-stick.webp',
-                    'assets/images/lizard.webp',
-                    'assets/images/mercado-oferta.webp',
-                    'assets/images/mom1.webp',
-                    'assets/images/moss.webp',
-                    'assets/images/mountains1.webp',
-                    'assets/images/mountains2.webp',
-                    'assets/images/nightime-peninsula-2.webp',
-                    'assets/images/nightime-peninsula.webp',
-                    'assets/images/orange-guy.webp',
-                    'assets/images/orange-guy2.webp',
-                    'assets/images/overview-waterfall.webp',
-                    'assets/images/palm-tree-bw.webp',
-                    'assets/images/palm-trees-with-colors-and-paper.webp',
-                    'assets/images/panoramic-above-eye-picture.webp',
-                    'assets/images/panoramic-river-mountains-wow-this-is-gorgeous.webp',
-                    'assets/images/panoramic-scenic-mountains-green.webp',
-                    'assets/images/park-bench-dramatic.webp',
-                    'assets/images/pastry.webp',
-                    'assets/images/pink-flowers-closeup.webp',
-                    'assets/images/pink-shirt-walking-on-path.webp',
-                    'assets/images/pretty-flowerthing-closeup.webp',
-                    'assets/images/pretty-waterfall.webp',
-                    'assets/images/public-house-2nd-floor.webp',
-                    'assets/images/purple-flowers.webp',
-                    'assets/images/red-bike-house-road.webp',
-                    'assets/images/red-flowers.webp',
-                    'assets/images/river-rainforest-tropical.webp',
-                    'assets/images/road1.webp',
-                    'assets/images/sayulitga.webp',
-                    'assets/images/sepia-public-house.webp',
-                    'assets/images/spider-in-spiderweb.webp',
-                    'assets/images/spider-in-web2.webp',
-                    'assets/images/stairs.webp',
-                    'assets/images/star.webp',
-                    'assets/images/street-food.webp',
-                    'assets/images/sunset1.webp',
-                    'assets/images/sunset2.webp',
-                    'assets/images/sunset-with-z.webp',
-                    'assets/images/swampape.webp',
-                    'assets/images/top-of-cool-building.webp',
-                    'assets/images/trail-into-ocean.webp',
-                    'assets/images/trees-1.webp',
-                    'assets/images/trees-and-mountains.webp',
-                    'assets/images/tropical-tops-of-trees.webp',
-                    'assets/images/two-rocks.webp',
-                    'assets/images/vespa-road-hispanic.webp',
-                    'assets/images/wall-graffiti-flower.webp',
-                    'assets/images/waterfall-1.webp',
-                    'assets/images/waterfall-closer.webp',
-                    'assets/images/waterfall-full-image.webp',
-                    'assets/images/weird-plant-thingy.webp',
-                    'assets/images/wet-leaves.webp',
-                    'assets/images/white-flowers.webp',
-                    'assets/images/willow-tree-i-think.webp',
-                    'assets/images/window-with-curtain.webp'
-                ];
-
-                this.config = {
-                    useDailyImage: true,
-                    rotateInterval: 10000,
-                    fadeDuration: 2000
-                };
-
-                this.currentImageIndex = 0;
-                this.rotationTimer = null;
-                this.isTransitioning = false;
-
-                this.heroBackground = document.getElementById('heroBackground');
-                this.imageInfo = document.getElementById('imageInfo');
-
-                this.init();
-            }
-
-            init() {
-                this.setInitialImage();
-                
-                if (!this.config.useDailyImage) {
-                    this.startAutoRotation();
-                }
-
-                this.addKeyboardNavigation();
-                this.updateImageInfo();
-            }
-
-            setInitialImage() {
-                if (this.config.useDailyImage) {
-                    const today = new Date();
-                    const dayOfMonth = today.getDate();
-                    this.currentImageIndex = (dayOfMonth - 1) % this.images.length;
-                } else {
-                    this.currentImageIndex = 0;
-                }
-                
-                this.updateBackgroundImage(this.images[this.currentImageIndex]);
-            }
-
-            updateBackgroundImage(imageUrl) {
-                this.isTransitioning = true;
-                
-                this.heroBackground.style.opacity = '0';
-                
-                setTimeout(() => {
-                    this.heroBackground.style.backgroundImage = `url(${imageUrl})`;
-                    this.heroBackground.style.opacity = '1';
-                    
-                    this.updateImageInfo();
-                    
-                    setTimeout(() => {
-                        this.isTransitioning = false;
-                    }, this.config.fadeDuration);
-                }, this.config.fadeDuration / 2);
-            }
-
-            nextImage() {
-                const nextIndex = (this.currentImageIndex + 1) % this.images.length;
-                this.currentImageIndex = nextIndex;
-                this.updateBackgroundImage(this.images[this.currentImageIndex]);
-            }
-
-            previousImage() {
-                const prevIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
-                this.currentImageIndex = prevIndex;
-                this.updateBackgroundImage(this.images[this.currentImageIndex]);
-            }
-
-            startAutoRotation() {
-                this.rotationTimer = setInterval(() => {
-                    this.nextImage();
-                }, this.config.rotateInterval);
-            }
-
-            stopAutoRotation() {
-                if (this.rotationTimer) {
-                    clearInterval(this.rotationTimer);
-                    this.rotationTimer = null;
-                }
-            }
-
-            addKeyboardNavigation() {
-                document.addEventListener('keydown', (e) => {
-                    switch(e.key) {
-                        case 'ArrowLeft':
-                            this.previousImage();
-                            break;
-                        case 'ArrowRight':
-                            this.nextImage();
-                            break;
-                        case ' ':
-                            e.preventDefault();
-                            if (this.rotationTimer) {
-                                this.stopAutoRotation();
-                            } else {
-                                this.startAutoRotation();
-                            }
-                            break;
-                    }
-                });
-            }
-
-            updateImageInfo() {
-                const today = new Date();
-                const dayOfMonth = today.getDate();
-                const imageName = this.images[this.currentImageIndex].split('/').pop();
-                
-                this.imageInfo.innerHTML = `
-                    <div>HCJK Collection</div>
-                    <div style="font-size: 0.8em; opacity: 0.8;">${imageName}</div>
-                    <div style="font-size: 0.7em; opacity: 0.6;">Day ${dayOfMonth} Photo</div>
-                    <div style="font-size: 0.7em; opacity: 0.6;">${this.currentImageIndex + 1} of ${this.images.length}</div>
-                `;
-            }
-        }
-
-        // Initialize the HCJK daily hero images
-        document.addEventListener('DOMContentLoaded', () => {
-            const hcjkHeroImages = new HCJKDailyHeroImages();
-            window.hcjkHeroImages = hcjkHeroImages;
-        });
-    </script>
-    
     <!-- Scripts -->
-    <script src="scripts.js"></script>
+    <!-- Instagram Embed Script -->
+       <script async src="//www.instagram.com/embed.js"></script>
+       
+       <script src="scripts.js"></script>
 </body>
 </html>
