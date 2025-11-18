@@ -56,7 +56,7 @@
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen" class="loading-screen">
-        <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="loading-logo">
+        <img loading="lazy" src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="loading-logo">
         <div class="loading-spinner"></div>
         <p class="loading-text">Loading</p>
     </div>
@@ -73,7 +73,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-brand">
-                <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
+                <img loading="lazy" src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
             </a>
             
             <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu">
@@ -109,15 +109,15 @@
                <!-- Hero Background Gallery -->
                <div class="hero-gallery">
                    <div class="hero-slide active">
-                       <img src="assets/images/hero-clay-roof-house-panoramic.webp" alt="Clay roof house" loading="eager">
+                       <img loading="lazy" src="assets/images/hero-clay-roof-house-panoramic.webp" alt="Clay roof house" loading="eager">
                        <div class="hero-overlay"></div>
                    </div>
                    <div class="hero-slide">
-                       <img src="assets/images/hero-mercado-oferta.webp" alt="Market scene" loading="lazy">
+                       <img loading="lazy" src="assets/images/hero-mercado-oferta.webp" alt="Market scene" loading="lazy">
                        <div class="hero-overlay"></div>
                    </div>
                    <div class="hero-slide">
-                       <img src="assets/images/hero-flags.webp" alt="Colorful flags" loading="lazy">
+                       <img loading="lazy" src="assets/images/hero-flags.webp" alt="Colorful flags" loading="lazy">
                        <div class="hero-overlay"></div>
                    </div>
                </div>
@@ -140,7 +140,7 @@
                <!-- Hero Content -->
                <div class="hero-content">
                    <div class="hero-brand">
-                       <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="hero-logo">
+                       <img loading="lazy" src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="hero-logo">
                    </div>
                    <h1 class="hero-title">Get in Touch</h1>
                    <p class="hero-subtitle">Let's create something beautiful together</p>
@@ -273,6 +273,195 @@
                 </div>
             </div>
         </section>
+           <!-- Advanced Booking Section -->
+           <section class="section advanced-booking-section">
+               <div class="container">
+                   <h2 class="section-title">Book Your Session</h2>
+                   <p class="section-subtitle">Intelligent scheduling tailored to your needs</p>
+                   
+                   <div class="booking-container">
+                       <!-- Package Recommendation Engine -->
+                       <div class="booking-recommendation">
+                           <h3>Find Your Perfect Package</h3>
+                           <div class="package-quiz">
+                               <div class="quiz-question active" data-question="event-type">
+                                   <h4>What type of session are you looking for?</h4>
+                                   <div class="quiz-options">
+                                       <button class="quiz-option" data-value="wedding">Wedding Photography</button>
+                                       <button class="quiz-option" data-value="portrait">Portrait Session</button>
+                                       <button class="quiz-option" data-value="engagement">Engagement Photos</button>
+                                       <button class="quiz-option" data-value="family">Family Photography</button>
+                                       <button class="quiz-option" data-value="corporate">Corporate/Headshots</button>
+                                   </div>
+                               </div>
+                               
+                               <div class="quiz-question" data-question="budget">
+                                   <h4>What is your approximate budget?</h4>
+                                   <div class="quiz-options">
+                                       <button class="quiz-option" data-value="economy">$500 - $1,000</button>
+                                       <button class="quiz-option" data-value="standard">$1,000 - $2,500</button>
+                                       <button class="quiz-option" data-value="premium">$2,500 - $5,000</button>
+                                       <button class="quiz-option" data-value="luxury">$5,000+</button>
+                                   </div>
+                               </div>
+                               
+                               <div class="quiz-question" data-question="timeline">
+                                   <h4>When do you need your photos?</h4>
+                                   <div class="quiz-options">
+                                       <button class="quiz-option" data-value="rush">Within 2 weeks</button>
+                                       <button class="quiz-option" data-value="standard">1-2 months</button>
+                                       <button class="quiz-option" data-value="flexible">3+ months</button>
+                                   </div>
+                               </div>
+                           </div>
+                           
+                           <div class="recommendation-result">
+                               <div class="recommended-package">
+                                   <h4>Recommended Package</h4>
+                                   <div class="package-card">
+                                       <h5 class="package-name">Premium Photography Package</h5>
+                                       <div class="package-price">$2,500</div>
+                                       <ul class="package-features">
+                                           <li>6-hour photography coverage</li>
+                                           <li>500+ edited high-resolution photos</li>
+                                           <li>Online gallery & print release</li>
+                                           <li>Professional editing & retouching</li>
+                                           <li>Custom slideshow</li>
+                                       </ul>
+                                       <button class="btn btn-primary book-now-btn">Book This Package</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <!-- Intelligent Booking Calendar -->
+                       <div class="booking-calendar">
+                           <h3>Select Your Date</h3>
+                           <div class="calendar-container">
+                               <div class="calendar-header">
+                                   <button class="calendar-nav prev-month"><</button>
+                                   <h4 class="current-month">November 2024</h4>
+                                   <button class="calendar-nav next-month">></button>
+                               </div>
+                               <div class="calendar-grid">
+                                   <div class="calendar-weekdays">
+                                       <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                                   </div>
+                                   <div class="calendar-days">
+                                       <!-- Calendar days will be generated by JavaScript -->
+                                   </div>
+                               </div>
+                           </div>
+                           
+                           <div class="time-slots">
+                               <h4>Available Time Slots</h4>
+                               <div class="slot-grid">
+                                   <button class="time-slot" data-time="09:00">9:00 AM</button>
+                                   <button class="time-slot" data-time="10:30">10:30 AM</button>
+                                   <button class="time-slot" data-time="14:00">2:00 PM</button>
+                                   <button class="time-slot" data-time="15:30">3:30 PM</button>
+                                   <button class="time-slot" data-time="17:00">5:00 PM</button>
+                                   <button class="time-slot" data-time="18:30">6:30 PM</button>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <!-- Booking Form -->
+                       <div class="booking-form-container">
+                           <form class="booking-form" id="booking-form">
+                               <div class="form-row">
+                                   <div class="form-group">
+                                       <label for="client-name">Full Name *</label>
+                                       <input type="text" id="client-name" name="name" required>
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="client-email">Email Address *</label>
+                                       <input type="email" id="client-email" name="email" required>
+                                   </div>
+                               </div>
+                               
+                               <div class="form-row">
+                                   <div class="form-group">
+                                       <label for="client-phone">Phone Number *</label>
+                                       <input type="tel" id="client-phone" name="phone" required>
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="client-event">Event Type *</label>
+                                       <select id="client-event" name="event-type" required>
+                                           <option value="">Select Event Type</option>
+                                           <option value="wedding">Wedding</option>
+                                           <option value="portrait">Portrait Session</option>
+                                           <option value="engagement">Engagement</option>
+                                           <option value="family">Family Photography</option>
+                                           <option value="corporate">Corporate/Headshots</option>
+                                       </select>
+                                   </div>
+                               </div>
+                               
+                               <div class="form-row">
+                                   <div class="form-group">
+                                       <label for="event-date">Preferred Date *</label>
+                                       <input type="date" id="event-date" name="date" required>
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="event-time">Preferred Time *</label>
+                                       <select id="event-time" name="time" required>
+                                           <option value="">Select Time</option>
+                                           <option value="09:00">9:00 AM</option>
+                                           <option value="10:30">10:30 AM</option>
+                                           <option value="14:00">2:00 PM</option>
+                                           <option value="15:30">3:30 PM</option>
+                                           <option value="17:00">5:00 PM</option>
+                                           <option value="18:30">6:30 PM</option>
+                                       </select>
+                                   </div>
+                               </div>
+                               
+                               <div class="form-group full-width">
+                                   <label for="event-location">Event Location</label>
+                                   <input type="text" id="event-location" name="location" placeholder="City, State or Venue Name">
+                               </div>
+                               
+                               <div class="form-group full-width">
+                                   <label for="client-message">Tell us about your vision...</label>
+                                   <textarea id="client-message" name="message" rows="4" placeholder="Describe your dream photoshoot, special requests, or any questions you have..."></textarea>
+                               </div>
+                               
+                               <div class="booking-summary">
+                                   <h4>Booking Summary</h4>
+                                   <div class="summary-details">
+                                       <div class="summary-item">
+                                           <span>Package:</span>
+                                           <span class="summary-package">Premium Photography Package</span>
+                                       </div>
+                                       <div class="summary-item">
+                                           <span>Date:</span>
+                                           <span class="summary-date">Not selected</span>
+                                       </div>
+                                       <div class="summary-item">
+                                           <span>Time:</span>
+                                           <span class="summary-time">Not selected</span>
+                                       </div>
+                                       <div class="summary-item total">
+                                           <span>Total:</span>
+                                           <span class="summary-total">$2,500</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               
+                               <div class="form-actions">
+                                   <button type="submit" class="btn btn-primary btn-large">
+                                       <span class="btn-text">Complete Booking</span>
+                                       <span class="btn-loader" style="display: none;">Processing...</span>
+                                   </button>
+                                   <p class="booking-note">* You'll receive instant confirmation via email</p>
+                               </div>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+           </section>
+
     </main>
 
     <!-- Footer -->
@@ -280,7 +469,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" class="footer-logo">
+                    <img loading="lazy" src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" class="footer-logo">
                     <h3>HCJK Collection</h3>
                 </div>
                 
@@ -328,6 +517,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="advanced-booking.js"></script>
     <script src="scripts.js"></script>
     <script>
         // Contact Form Functionality
