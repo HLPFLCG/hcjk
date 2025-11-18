@@ -56,7 +56,7 @@
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen" class="loading-screen">
-        <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="loading-logo">
+        <img loading="lazy" src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="loading-logo">
         <div class="loading-spinner"></div>
         <p class="loading-text">Loading...</p>
     </div>
@@ -73,7 +73,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-brand">
-                <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
+                <img loading="lazy" src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
             </a>
             
             <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu">
@@ -109,15 +109,15 @@
                <!-- Hero Background Gallery -->
                <div class="hero-gallery">
                    <div class="hero-slide active">
-                       <img src="assets/images/hero-sunset2.webp" alt="Beautiful sunset" loading="eager">
+                       <img loading="lazy" src="assets/images/hero-sunset2.webp" alt="Beautiful sunset" loading="eager">
                        <div class="hero-overlay"></div>
                    </div>
                    <div class="hero-slide">
-                       <img src="assets/images/hero-flower-close-up.webp" alt="Flower close up" loading="lazy">
+                       <img loading="lazy" src="assets/images/hero-flower-close-up.webp" alt="Flower close up" loading="lazy">
                        <div class="hero-overlay"></div>
                    </div>
                    <div class="hero-slide">
-                       <img src="assets/images/hero-jungle1.webp" alt="Jungle scene" loading="lazy">
+                       <img loading="lazy" src="assets/images/hero-jungle1.webp" alt="Jungle scene" loading="lazy">
                        <div class="hero-overlay"></div>
                    </div>
                </div>
@@ -140,7 +140,7 @@
                <!-- Hero Content -->
                <div class="hero-content">
                    <div class="hero-brand">
-                       <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="hero-logo">
+                       <img loading="lazy" src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection" class="hero-logo">
                    </div>
                    <h1 class="hero-title">Portfolio</h1>
                    <p class="hero-subtitle">A collection of moments captured through time</p>
@@ -159,6 +159,32 @@
             </div>
         </section>
 
+           <!-- AI Smart Search Section -->
+           <section class="section smart-search-section">
+               <div class="container">
+                   <h2 class="section-title">Discover Your Perfect Moment</h2>
+                   <p class="section-subtitle">AI-powered search to find exactly what you're looking for</p>
+                   
+                   <div class="smart-search-container">
+                       <div class="search-input-group">
+                           <div class="search-icon">
+                               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                   <circle cx="11" cy="11" r="8"/>
+                                   <path d="m21 21-4.35-4.35"/>
+                               </svg>
+                           </div>
+                           <input type="text" id="smart-search" class="smart-search-input" placeholder="Search by style, mood, location, or describe your perfect shot...">
+                           <button class="voice-search-btn" id="voice-search" aria-label="Voice search">
+                               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                                   <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                               </svg>
+                           </button>
+                       </div>
+                   </div>
+               </div>
+           </section>
+
         <!-- Portfolio Grid -->
         <section class="section portfolio-grid-section">
             <div class="container">
@@ -166,7 +192,7 @@
                     <!-- Wedding Photos -->
                     <div class="portfolio-item" data-category="wedding">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-1.webp" alt="Romantic Ceremony" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-1.webp" alt="Romantic Ceremony" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Romantic Ceremony</h3>
                                 <span class="portfolio-category">Wedding</span>
@@ -176,7 +202,7 @@
                     
                     <div class="portfolio-item" data-category="wedding">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-10.webp" alt="First Dance" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-10.webp" alt="First Dance" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>First Dance</h3>
                                 <span class="portfolio-category">Wedding</span>
@@ -186,7 +212,7 @@
                     
                     <div class="portfolio-item" data-category="wedding">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-11.webp" alt="Wedding Celebration" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-11.webp" alt="Wedding Celebration" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Wedding Celebration</h3>
                                 <span class="portfolio-category">Wedding</span>
@@ -196,7 +222,7 @@
                     
                     <div class="portfolio-item" data-category="wedding">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-12.webp" alt="Bride Portrait" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-12.webp" alt="Bride Portrait" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Bride Portrait</h3>
                                 <span class="portfolio-category">Wedding</span>
@@ -206,7 +232,7 @@
                     
                     <div class="portfolio-item" data-category="wedding">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-13.webp" alt="Couple Moment" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-13.webp" alt="Couple Moment" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Couple Moment</h3>
                                 <span class="portfolio-category">Wedding</span>
@@ -216,7 +242,7 @@
                     
                     <div class="portfolio-item" data-category="wedding">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-14.webp" alt="Reception Joy" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-14.webp" alt="Reception Joy" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Reception Joy</h3>
                                 <span class="portfolio-category">Wedding</span>
@@ -227,7 +253,7 @@
                     <!-- Portrait Photos -->
                     <div class="portfolio-item" data-category="portrait">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-2.webp" alt="Family Portrait" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-2.webp" alt="Family Portrait" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Family Portrait</h3>
                                 <span class="portfolio-category">Portrait</span>
@@ -237,7 +263,7 @@
                     
                     <div class="portfolio-item" data-category="portrait">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-20.webp" alt="Senior Portrait" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-20.webp" alt="Senior Portrait" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Senior Portrait</h3>
                                 <span class="portfolio-category">Portrait</span>
@@ -247,7 +273,7 @@
                     
                     <div class="portfolio-item" data-category="portrait">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-21.webp" alt="Child Portrait" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-21.webp" alt="Child Portrait" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Child Portrait</h3>
                                 <span class="portfolio-category">Portrait</span>
@@ -257,7 +283,7 @@
                     
                     <div class="portfolio-item" data-category="portrait">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-22.webp" alt="Professional Headshot" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-22.webp" alt="Professional Headshot" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Professional Headshot</h3>
                                 <span class="portfolio-category">Portrait</span>
@@ -267,7 +293,7 @@
                     
                     <div class="portfolio-item" data-category="portrait">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-23.webp" alt="Maternity Session" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-23.webp" alt="Maternity Session" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Maternity Session</h3>
                                 <span class="portfolio-category">Portrait</span>
@@ -277,7 +303,7 @@
                     
                     <div class="portfolio-item" data-category="portrait">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-24.webp" alt="Individual Portrait" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-24.webp" alt="Individual Portrait" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Individual Portrait</h3>
                                 <span class="portfolio-category">Portrait</span>
@@ -288,7 +314,7 @@
                     <!-- Landscape Photos -->
                     <div class="portfolio-item" data-category="landscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-3.webp" alt="Mountain Vista" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-3.webp" alt="Mountain Vista" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Mountain Vista</h3>
                                 <span class="portfolio-category">Landscape</span>
@@ -298,7 +324,7 @@
                     
                     <div class="portfolio-item" data-category="landscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-30.webp" alt="Coastal Sunset" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-30.webp" alt="Coastal Sunset" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Coastal Sunset</h3>
                                 <span class="portfolio-category">Landscape</span>
@@ -308,7 +334,7 @@
                     
                     <div class="portfolio-item" data-category="landscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/landscape-1.webp" alt="Forest Path" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/landscape-1.webp" alt="Forest Path" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Forest Path</h3>
                                 <span class="portfolio-category">Landscape</span>
@@ -318,7 +344,7 @@
                     
                     <div class="portfolio-item" data-category="landscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-31.webp" alt="Desert Landscape" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-31.webp" alt="Desert Landscape" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Desert Landscape</h3>
                                 <span class="portfolio-category">Landscape</span>
@@ -328,7 +354,7 @@
                     
                     <div class="portfolio-item" data-category="landscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-32.webp" alt="Lake Reflection" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-32.webp" alt="Lake Reflection" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Lake Reflection</h3>
                                 <span class="portfolio-category">Landscape</span>
@@ -338,7 +364,7 @@
                     
                     <div class="portfolio-item" data-category="landscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-33.webp" alt="Autumn Colors" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-33.webp" alt="Autumn Colors" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Autumn Colors</h3>
                                 <span class="portfolio-category">Landscape</span>
@@ -349,7 +375,7 @@
                     <!-- Cityscape Photos -->
                     <div class="portfolio-item" data-category="cityscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-4.webp" alt="Urban Skyline" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-4.webp" alt="Urban Skyline" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Urban Skyline</h3>
                                 <span class="portfolio-category">Cityscape</span>
@@ -359,7 +385,7 @@
                     
                     <div class="portfolio-item" data-category="cityscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-40.webp" alt="City Lights" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-40.webp" alt="City Lights" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>City Lights</h3>
                                 <span class="portfolio-category">Cityscape</span>
@@ -369,7 +395,7 @@
                     
                     <div class="portfolio-item" data-category="cityscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-41.webp" alt="Architecture Detail" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-41.webp" alt="Architecture Detail" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Architecture Detail</h3>
                                 <span class="portfolio-category">Cityscape</span>
@@ -379,7 +405,7 @@
                     
                     <div class="portfolio-item" data-category="cityscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-42.webp" alt="Street Scene" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-42.webp" alt="Street Scene" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Street Scene</h3>
                                 <span class="portfolio-category">Cityscape</span>
@@ -389,7 +415,7 @@
                     
                     <div class="portfolio-item" data-category="cityscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-43.webp" alt="Night Photography" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-43.webp" alt="Night Photography" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Night Photography</h3>
                                 <span class="portfolio-category">Cityscape</span>
@@ -399,7 +425,7 @@
                     
                     <div class="portfolio-item" data-category="cityscape">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-44.webp" alt="Urban Perspective" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-44.webp" alt="Urban Perspective" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Urban Perspective</h3>
                                 <span class="portfolio-category">Cityscape</span>
@@ -410,7 +436,7 @@
                     <!-- Macro Photos -->
                     <div class="portfolio-item" data-category="macro">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-5.webp" alt="Flower Detail" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-5.webp" alt="Flower Detail" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Flower Detail</h3>
                                 <span class="portfolio-category">Macro</span>
@@ -420,7 +446,7 @@
                     
                     <div class="portfolio-item" data-category="macro">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-50.webp" alt="Nature Close-up" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-50.webp" alt="Nature Close-up" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Nature Close-up</h3>
                                 <span class="portfolio-category">Macro</span>
@@ -430,7 +456,7 @@
                     
                     <div class="portfolio-item" data-category="macro">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-51.webp" alt="Insect Macro" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-51.webp" alt="Insect Macro" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Insect Macro</h3>
                                 <span class="portfolio-category">Macro</span>
@@ -440,7 +466,7 @@
                     
                     <div class="portfolio-item" data-category="macro">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-52.webp" alt="Texture Study" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-52.webp" alt="Texture Study" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Texture Study</h3>
                                 <span class="portfolio-category">Macro</span>
@@ -450,7 +476,7 @@
                     
                     <div class="portfolio-item" data-category="macro">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-53.webp" alt="Water Droplets" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-53.webp" alt="Water Droplets" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Water Droplets</h3>
                                 <span class="portfolio-category">Macro</span>
@@ -460,7 +486,7 @@
                     
                     <div class="portfolio-item" data-category="macro">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-54.webp" alt="Botanical Detail" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-54.webp" alt="Botanical Detail" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Botanical Detail</h3>
                                 <span class="portfolio-category">Macro</span>
@@ -471,7 +497,7 @@
                     <!-- Custom Photos -->
                     <div class="portfolio-item" data-category="custom">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-6.webp" alt="Editorial Fashion" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-6.webp" alt="Editorial Fashion" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Editorial Fashion</h3>
                                 <span class="portfolio-category">Custom</span>
@@ -481,7 +507,7 @@
                     
                     <div class="portfolio-item" data-category="custom">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-60.webp" alt="Commercial Product" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-60.webp" alt="Commercial Product" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Commercial Product</h3>
                                 <span class="portfolio-category">Custom</span>
@@ -491,7 +517,7 @@
                     
                     <div class="portfolio-item" data-category="custom">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-15.webp" alt="Event Coverage" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-15.webp" alt="Event Coverage" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Event Coverage</h3>
                                 <span class="portfolio-category">Custom</span>
@@ -501,7 +527,7 @@
                     
                     <div class="portfolio-item" data-category="custom">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-16.webp" alt="Brand Photography" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-16.webp" alt="Brand Photography" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Brand Photography</h3>
                                 <span class="portfolio-category">Custom</span>
@@ -511,7 +537,7 @@
                     
                     <div class="portfolio-item" data-category="custom">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-17.webp" alt="Documentary Project" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-17.webp" alt="Documentary Project" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Documentary Project</h3>
                                 <span class="portfolio-category">Custom</span>
@@ -521,7 +547,7 @@
                     
                     <div class="portfolio-item" data-category="custom">
                         <a href="#" class="portfolio-link">
-                            <img src="https://hcjk.org/images/portfolio/portfolio-18.webp" alt="Artistic Collaboration" class="portfolio-image">
+                            <img loading="lazy" src="https://hcjk.org/images/portfolio/portfolio-18.webp" alt="Artistic Collaboration" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Artistic Collaboration</h3>
                                 <span class="portfolio-category">Custom</span>
@@ -556,7 +582,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" class="footer-logo">
+                    <img loading="lazy" src="https://hcjk.org/images/logo/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" class="footer-logo">
                     <h3>HCJK Collection</h3>
                 </div>
                 
@@ -604,6 +630,7 @@
     </footer>
 
     <!-- Scripts -->
+       <script src="smart-search.js"></script>
     <script src="scripts.js"></script>
     <script>
         // Portfolio Filter Functionality
