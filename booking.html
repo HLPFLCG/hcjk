@@ -56,7 +56,7 @@
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen" class="loading-screen">
-        <img src="assets/images/hcjkstackednewsvg.svg" alt="HCJK Collection" class="loading-logo">
+        <img src="https://picsum.photos/seed/hcjk-loading/200/100" alt="HCJK Collection" class="loading-logo">
         <div class="loading-spinner"></div>
         <p class="loading-text">Loading</p>
     </div>
@@ -73,7 +73,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-brand">
-                <img src="assets/images/hcjkstackednewsvg.svg" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
+                <img src="https://picsum.photos/seed/hcjk-logo/120/40" alt="HCJK Collection Logo" width="120" height="40" loading="lazy">
             </a>
             
             <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu">
@@ -104,16 +104,49 @@
 
     <!-- Main Content -->
     <main id="main-content">
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
-                <h1 class="page-title">Booking & Packages</h1>
-                <p class="page-subtitle">Choose the perfect photography package for your needs</p>
+        <!-- Hero Section with Rotating Images -->
+        <section class="hero">
+            <div class="hero-slider" id="hero-slider">
+                <div class="hero-slide active">
+                    <img src="https://picsum.photos/seed/hcjk-booking-hero1/1920/1080" alt="Photography Booking" class="hero-image">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Book Your Session</h1>
+                        <p class="hero-subtitle">Choose the perfect photography package for your needs</p>
+                        <a href="#packages" class="hero-cta">View Packages</a>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="https://picsum.photos/seed/hcjk-booking-hero2/1920/1080" alt="Wedding Photography Packages" class="hero-image">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Wedding Packages</h1>
+                        <p class="hero-subtitle">Comprehensive coverage for your special day</p>
+                        <a href="#wedding-packages" class="hero-cta">See Options</a>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="https://picsum.photos/seed/hcjk-booking-hero3/1920/1080" alt="Portrait Photography Services" class="hero-image">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Portrait Sessions</h1>
+                        <p class="hero-subtitle">Professional portraits for every occasion</p>
+                        <a href="#portrait-packages" class="hero-cta">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Navigation -->
+            <div class="hero-nav">
+                <button class="hero-nav-btn prev" id="hero-prev">&#10094;</button>
+                <button class="hero-nav-btn next" id="hero-next">&#10095;</button>
+            </div>
+            <!-- Hero Indicators -->
+            <div class="hero-indicators" id="hero-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
             </div>
         </section>
 
         <!-- Wedding Packages -->
-        <section class="section packages-section">
+        <section id="wedding-packages" class="section packages-section">
             <div class="container">
                 <h2 class="section-title">Wedding Photography Packages</h2>
                 <p class="section-subtitle">Comprehensive coverage for your special day</p>
@@ -169,7 +202,7 @@
         </section>
 
         <!-- Portrait Packages -->
-        <section class="section packages-section">
+        <section id="portrait-packages" class="section packages-section">
             <div class="container">
                 <h2 class="section-title">Portrait Photography Packages</h2>
                 <p class="section-subtitle">Professional portraits for every occasion</p>
@@ -219,7 +252,7 @@
         </section>
 
         <!-- Booking Form -->
-        <section class="section booking-form-section">
+        <section id="booking-form" class="section booking-form-section">
             <div class="container">
                 <h2 class="section-title">Book Your Session</h2>
                 <p class="section-subtitle">Fill out the form below to get started</p>
@@ -288,7 +321,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-brand">
-                        <img src="assets/images/hcjkstackednewsvg.svg" alt="HCJK Collection" width="120" height="40">
+                        <img src="https://picsum.photos/seed/hcjk-logo/120/40" alt="HCJK Collection" width="120" height="40">
                         <p>Professional photography services capturing life's most precious moments.</p>
                     </div>
                 </div>
@@ -322,5 +355,46 @@
 
     <!-- Scripts -->
     <script src="scripts.js"></script>
+    <script>
+        // Hero Slider functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.getElementById('hero-prev');
+            const nextBtn = document.getElementById('hero-next');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentSlide = index;
+            }
+            
+            function nextSlide() {
+                const nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            }
+            
+            function prevSlide() {
+                const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prevIndex);
+            }
+            
+            // Auto-play slider
+            setInterval(nextSlide, 5000);
+            
+            // Navigation controls
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            // Indicator controls
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => showSlide(index));
+            });
+        });
+    </script>
 </body>
 </html>
